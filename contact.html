@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Rock & Gridiron Football - Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0b3d91;
+      --accent: #ff7f50;
+      --light: #f9f9f9;
+      --dark: #1a1a1a;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Roboto', sans-serif; background: var(--light); color: var(--dark); line-height: 1.6; }
+
+    nav { background: var(--primary); display: flex; justify-content: center; gap: 2rem; padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+    nav a { color: white; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+    nav a:hover { color: var(--accent); }
+
+    header { text-align: center; padding: 4rem 2rem; }
+    header h1 { font-family: 'Oswald', sans-serif; font-size: 2.5rem; margin-bottom: 1rem; }
+    header p { font-size: 1.25rem; max-width: 700px; margin: auto; }
+
+    section { max-width: 600px; margin: auto; padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+
+    label { display: block; margin-top: 1rem; font-weight: bold; }
+    input, textarea { width: 100%; padding: 0.75rem; margin-top: 0.5rem; border-radius: 8px; border: 1px solid #ccc; font-size: 1rem; }
+    textarea { resize: vertical; min-height: 120px; }
+
+    button { margin-top: 1.5rem; padding: 0.75rem 1.5rem; background: var(--primary); color: white; border: none; border-radius: 8px; font-size: 1rem; cursor: pointer; transition: background 0.3s; }
+    button:hover { background: var(--accent); }
+
+    footer { background: var(--primary); color: white; text-align: center; padding: 2rem; margin-top: 4rem; }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="calendar.html">Calendar</a>
+    <a href="waivers.html">Waivers</a>
+    <a href="photos.html">Photos</a>
+    <a href="rules.html">Rules</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Contact The Rock & Gridiron Football</h1>
+    <p>Have a question or want to get in touch? Fill out the form below and we’ll respond as soon as possible.</p>
+  </header>
+
+  <!-- Contact Form -->
+  <section>
+    <form action="https://formspree.io/f/xqebkbvy" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 The Rock & Gridiron Football</p>
+  </footer>
+
+</body>
+</html>
