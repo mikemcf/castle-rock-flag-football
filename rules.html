@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Castle Rock Flag Football League - Rules</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0b3d91;
+      --accent: #ff7f50;
+      --light: #f9f9f9;
+      --dark: #1a1a1a;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Roboto', sans-serif; background: var(--light); color: var(--dark); line-height: 1.6; }
+
+    nav { background: var(--primary); display: flex; justify-content: center; gap: 2rem; padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+    nav a { color: white; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+    nav a:hover { color: var(--accent); }
+
+    header { background: var(--light); text-align: center; padding: 4rem 2rem; }
+    header h1 { font-family: 'Oswald', sans-serif; font-size: 2.5rem; margin-bottom: 1rem; }
+    header p { font-size: 1.25rem; max-width: 700px; margin: auto; }
+
+    section { max-width: 1000px; margin: auto; padding: 4rem 2rem; }
+    h2 { font-family: 'Oswald', sans-serif; font-size: 2rem; color: var(--primary); margin-bottom: 1rem; border-bottom: 3px solid var(--accent); display: inline-block; padding-bottom: 0.25rem; }
+
+    .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); margin-bottom: 2rem; }
+
+    iframe { width: 100%; height: 900px; border: none; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+
+    footer { background: var(--primary); color: white; text-align: center; padding: 2rem; margin-top: 4rem; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="calendar.html">Calendar</a>
+    <a href="waivers.html">Waivers</a>
+    <a href="photos.html">Photos</a>
+    <a href="rules.html">Rules</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Castle Rock Flag Football League</h1>
+    <p>View the full league rules below. All players must read and follow these rules during gameplay.</p>
+  </header>
+
+  <section>
+    <h2>League Rules PDF</h2>
+    <div class="card">
+      <!-- Replace rules.pdf with the path to your PDF file -->
+      <iframe src="rules.pdf"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Castle Rock Flag Football League</p>
+  </footer>
+
+</body>
+</html>
