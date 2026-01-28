@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Rock & Gridiron League</title>
+  <title>Castle Rock Flag Football League</title>
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --primary: #0b3d91;
@@ -15,59 +17,89 @@
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Roboto', sans-serif; background: var(--light); color: var(--dark); line-height: 1.6; }
-    nav { background: var(--primary); display: flex; justify-content: center; gap: 2rem; padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+
+    /* Navigation */
+    nav {
+      background: var(--primary);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
     nav a { color: white; text-decoration: none; font-weight: bold; transition: color 0.3s; }
     nav a:hover { color: var(--accent); }
 
-    header { background: var(--light); text-align: center; padding: 4rem 2rem; }
-    header img { max-width: 250px; margin-bottom: 2rem; }
+    /* Header */
+    header {
+      background: var(--light);
+      text-align: center;
+      padding: 4rem 2rem;
+    }
     header h1 { font-family: 'Oswald', sans-serif; font-size: 2.5rem; margin-bottom: 1rem; }
     header p { font-size: 1.25rem; max-width: 700px; margin: auto; }
 
+    /* Logo */
     .logo {
       display: block;
       max-width: 200px;       /* Adjust size as needed */
-      margin: 0 auto 1.5rem;  /* Center and space below */
+      margin: 0 auto 1.5rem;  /* Center and spacing below */
       border-radius: 12px;    /* Optional rounded corners */
     }
 
-    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; max-width: 900px; margin: 2rem auto; }
-    .gallery img { width: 100%; border-radius: 12px; object-fit: cover; transition: transform 0.3s; }
-    .gallery img:hover { transform: scale(1.05); }
+    /* Gallery */
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+      padding: 0 2rem;
+    }
+    .gallery img {
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
 
+    /* Footer */
     footer { background: var(--primary); color: white; text-align: center; padding: 2rem; margin-top: 4rem; }
+
   </style>
 </head>
 <body>
 
+  <!-- Navigation -->
   <nav>
     <a href="index.html">Home</a>
     <a href="calendar.html">Calendar</a>
     <a href="waivers.html">Waivers</a>
-    <a href="waivers.html">Signup</a>
     <a href="rules.html">Rules</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
   </nav>
 
+  <!-- Header with Logo -->
   <header>
-  <!-- League Logo -->
-  <img src="images/logo1.png" alt="Castle Rock Flag Football League Logo" class="logo">
-    <p>Welcome to The Rock & Gridiron League! We are a group of friends who enjoy competitive yet friendly games. Our league is all about fun, camaraderie, and playing hard while respecting fellow players. If you are interested in joining, please fill out the waiver and check our calendar for game times and location!</p>
- <!-- Home page photo gallery -->
-<section id="gallery">
-<div class="gallery">
-  <img src="images/image2.jpeg" alt="League Photo 2">
-  <img src="images/image3.jpeg" alt="League Photo 3">
-  <img src="images/image4.jpeg" alt="League Photo 4">
-</div>
-
-</section>
-
+    <img src="images/logo1.png" alt="Castle Rock Flag Football League Logo" class="logo">
+    <h1>The Rock & Gridiron Football</h1>
+    <p>Welcome! Join us for fun, competitive flag football in Castle Rock.</p>
   </header>
 
+  <!-- Photo Gallery -->
+  <section id="gallery">
+    <div class="gallery">
+      <img src="images/image2.jpeg" alt="League Photo 2">
+      <img src="images/image3.jpeg" alt="League Photo 3">
+      <img src="images/image4.jpeg" alt="League Photo 4">
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>2026 The Rock & Gridiron League</p>
+    <p>© 2026 The Rock & Gridiron Football League</p>
   </footer>
 
 </body>
