@@ -27,9 +27,9 @@
     section { max-width: 900px; margin: auto; padding: 4rem 2rem; }
     h2 { font-family: 'Oswald', sans-serif; font-size: 2rem; color: var(--primary); margin-bottom: 1rem; border-bottom: 3px solid var(--accent); display: inline-block; padding-bottom: 0.25rem; }
 
-    .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); margin-bottom: 2rem; }
+    .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); margin-bottom: 2rem; text-align: center; }
 
-    iframe { width: 100%; height: 900px; border: none; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+    iframe { width: 100%; max-width: 640px; height: 1513px; border: none; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
 
     .notice { font-weight: bold; color: var(--accent); margin-bottom: 1rem; font-size: 1.1rem; }
 
@@ -50,14 +50,15 @@
 
   <header>
     <h1>Castle Rock Flag Football League</h1>
-    <p>Please fill out your waiver form below. <strong>All players must submit this before participating in any games!</strong></p>
+    <p>All players must submit the waiver form below <strong>before participating in any games</strong>.</p>
   </header>
 
   <section>
     <h2>Player Waiver Form</h2>
     <div class="card">
-      <!-- Replace YOUR_FORM_ID with your actual Google Form ID -->
-      <iframe src="<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdmbJI7xsellwCdeYoQGh7RuPHgN5A9hdF7kKWF7TvXc_QICw/viewform?embedded=true" width="640" height="1513" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>"></iframe>
+      <div class="notice">⚠️ Must complete this form to play!</div>
+      <!-- Embedded Google Form -->
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdmbJI7xsellwCdeYoQGh7RuPHgN5A9hdF7kKWF7TvXc_QICw/viewform?embedded=true" width="640" height="1513" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
   </section>
 
