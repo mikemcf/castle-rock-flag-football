@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Castle Rock Flag Football</title>
+  <style>
+    :root {
+      --primary: #1f2933;
+      --accent: #f97316;
+      --light: #f9fafb;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--light);
+      color: var(--primary);
+      line-height: 1.6;
+    }
+
+    nav {
+      background: var(--primary);
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    header {
+      padding: 4rem 1rem;
+      text-align: center;
+      background: linear-gradient(to right, #111827, #1f2933);
+      color: white;
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      border-bottom: 3px solid var(--accent);
+      display: inline-block;
+      padding-bottom: .25rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--primary);
+      color: white;
+      margin-top: 3rem;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: .75rem;
+      margin-bottom: 1rem;
+    }
+
+    form button {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: .75rem 1.5rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery div {
+      background: #e5e7eb;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#calendar">Calendar</a>
+    <a href="#waivers">Waivers</a>
+    <a href="#photos">Photos</a>
+    <a href="#rules">Rules</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header id="home">
+    <h1>Castle Rock Flag Football</h1>
+    <p>Competitive football • Good people • No egos</p>
+  </header>
+
+  <section id="calendar">
+    <h2>Game Calendar</h2>
+    <div class="card">
+      <p><strong>Saturdays @ 9:00 AM</strong></p>
+      <p>Philip S. Miller Park</p>
+      <p>Bi-weekly pickup & league play</p>
+    </div>
+  </section>
+
+  <section id="waivers">
+    <h2>Waivers</h2>
+    <div class="card">
+      <p>All players must complete a waiver before playing.</p>
+      <p><a href="#">Download Waiver (PDF)</a></p>
+    </div>
+  </section>
+
+  <section id="photos">
+    <h2>Photos</h2>
+    <div class="gallery">
+      <div>Game Photo</div>
+      <div>Game Photo</div>
+      <div>Game Photo</div>
+    </div>
+  </section>
+
+  <section id="rules">
+    <h2>League Rules</h2>
+    <div class="card">
+      <ul>
+        <li>Flag / two-hand touch</li>
+        <li>No tackling or flag guarding</li>
+        <li>Cleats recommended</li>
+        <li>Competitive but respectful play</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="card">
+      <p>This league started as a group of friends who love football and competition. We play hard, respect each other, and keep it fun.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Message" rows="4"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Castle Rock Flag Football</p>
+  </footer>
+
+</body>
+</html>
